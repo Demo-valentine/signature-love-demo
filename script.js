@@ -3,23 +3,28 @@ document.getElementById("girlName").innerText = "Her ❤️";
 
 // SLIDER
 const images = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg"];
+const images = ["img1.jpg", "img2.jpg", "img3.jpg"];
 let index = 0;
 
 const slideImg = document.getElementById("slideImg");
 const sliderSection = document.getElementById("sliderSection");
 const valentineSection = document.getElementById("valentineSection");
-const finalSection = document.getElementById("finalSection");
 
-const sliderInterval = setInterval(() => {
-  index++;
-  if (index < images.length) {
-    slideImg.src = images[index];
-  } else {
-    clearInterval(sliderInterval);
-    sliderSection.classList.remove("active");
-    valentineSection.classList.add("active");
-  }
-}, 2500);
+setInterval(() => {
+  slideImg.classList.add("fade-out");
+
+  setTimeout(() => {
+    index++;
+    if (index < images.length) {
+      slideImg.src = images[index];
+      slideImg.classList.remove("fade-out");
+      slideImg.classList.add("fade-in");
+    } else {
+      sliderSection.classList.remove("active");
+      valentineSection.classList.add("active");
+    }
+  }, 800);
+}, 2800);
 
 // YES / NO LOGIC
 const yesBtn = document.getElementById("yesBtn");
