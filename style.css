@@ -75,11 +75,12 @@ button {
 
 /* FINAL BOX */
 .finalBox {
-  background: rgba(255, 77, 109, 0.15);
-  border: 2px solid #ff4d6d;
+  background: linear-gradient(135deg, #ffd1dc, #f7b2c4);
+  border: 2px solid #e63946;
   padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 0 40px rgba(255,77,109,0.6);
+  border-radius: 22px;
+  box-shadow: 0 20px 50px rgba(200, 58, 111, 0.45);
+  max-width: 320px;
 }
 
 /* HEARTS */
@@ -108,4 +109,21 @@ body::before {
   align-items: center;
   justify-content: center;
   pointer-events: none;
+}
+.fade-img {
+  width: 85%;
+  max-width: 320px;
+  border-radius: 20px;
+  box-shadow: 0 18px 45px rgba(200, 58, 111, 0.35);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  transform: scale(0.97);
+}
+
+.fade-in {
+  opacity: 1;
+  transform: scale(1.03);
 }
