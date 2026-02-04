@@ -6,11 +6,13 @@
 }
 
 body {
-  background:
-    radial-gradient(circle at top, rgba(255,77,109,0.35), transparent 60%),
-    radial-gradient(circle at bottom, rgba(255,120,140,0.25), transparent 60%),
-    linear-gradient(135deg, #7b0015, #b11226, #7b0015);
-  color: #ffd6dc;
+  background: linear-gradient(
+    180deg,
+    #ffe6ee 0%,
+    #f7b2c4 50%,
+    #f4a3b4 100%
+  );
+  color: #7a1f3d;
   text-align: center;
   overflow-x: hidden;
 }
@@ -30,19 +32,18 @@ body {
 
 .title {
   font-size: 2.4rem;
-  margin-bottom: 20px;
-}
-
-.title span {
-  color: #ff4d6d;
+  margin-bottom: 25px;
+  color: #c83a6f;
+  text-shadow: 0 0 12px rgba(200,58,111,0.4);
 }
 
 /* SLIDER */
-.slider img {
-  width: 85%;
-  max-width: 320px;
-  border-radius: 20px;
-  box-shadow: 0 0 40px rgba(255, 77, 109, 0.6);
+.slider {
+  background: linear-gradient(135deg, #ffd1dc, #f7b2c4);
+  padding: 22px;
+  border-radius: 30px;
+  box-shadow: 0 18px 45px rgba(200, 58, 111, 0.35);
+  margin-bottom: 40px;
 }
 
 /* BUTTONS */
