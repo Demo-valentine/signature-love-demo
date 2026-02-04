@@ -6,7 +6,10 @@
 }
 
 body {
-  background: radial-gradient(circle at top, #b11226, #4a0009);
+  background:
+    radial-gradient(circle at top, rgba(255,77,109,0.35), transparent 60%),
+    radial-gradient(circle at bottom, rgba(255,120,140,0.25), transparent 60%),
+    linear-gradient(135deg, #7b0015, #b11226, #7b0015);
   color: #ffd6dc;
   text-align: center;
   overflow-x: hidden;
